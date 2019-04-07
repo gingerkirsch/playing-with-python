@@ -1,0 +1,12 @@
+The regular reduce—the fold left operation:
+   fold_left = functools.reduce(
+       lambda x, y: function(x, y),
+       iterable,
+       initializer,
+)
+The reverse—the fold right operation:
+   fold_right = functools.reduce(
+       lambda x, y: function(y, x),
+       reversed(iterable),
+       initializer,
+)
